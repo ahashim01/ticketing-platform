@@ -35,7 +35,7 @@ while **never selling the same seat twice**.
 | Consistency trade-off | Temporarily unsold seats (held, then released) are acceptable. A small number unsold at the end is tolerable. |
 | Latency | Hold a seat: p95 < 300 ms at peak. Seat map: p95 < 500 ms, data up to ~5 s stale. |
 | Availability | 99.9% during on-sale windows; that is when downtime is most expensive. |
-| Fairness | Buyers are admitted in arrival order. People who cannot get a seat are told quickly (sold-out shown within ~10 s of the last seat selling), and their traffic must not slow checkout for people who are buying. |
+| Fairness | Buyers are admitted in arrival order. People who cannot get a seat are told quickly (sold-out shown within ~10 s of the last seat selling), for all the held not yet sold tickets we are having message for the queue All seats are currently held; some may become available.” , and their traffic must not slow checkout for people who are buying. |
 | Abuse | Bots are a known problem: per-account limit enforced server-side; bot defence at the waiting-room door. |
 | Region | Single region near Egypt (~90% of buyers). No multi-region in v0. |
 
